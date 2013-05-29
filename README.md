@@ -1,7 +1,7 @@
 Cocoapod Badges
 ===============
 
-[![NSStringMask](http://cocoapod-badges.herokuapp.com/v/nsstringmask/badge.png)](http://cocoadocs.org/docsets/NSStringMask) NSStringMask's lastest version badge
+[![NSStringMask](http://cocoapod-badges.herokuapp.com/v/nsstringmask/badge.png)](http://cocoadocs.org/docsets/NSStringMask) NSStringMask's latest version badge
 
 Cocoapod badges are status badges to inform a pod's latest version deployed to [Cocoapods](http://cocoapods.org)!
 
