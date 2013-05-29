@@ -25,7 +25,7 @@ def badge(request, podname):
         version = 'error'
 
         for item in pod_list:
-            if item['name'].lower() == podname:
+            if item['name'].lower() == podname.lower():
                 version = item['versions'][-1]
 
         svg_data = svg_file.read().format(version)
