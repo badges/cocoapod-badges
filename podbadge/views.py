@@ -3,36 +3,32 @@ __author__ = 'flaviocaetano'
 from django.http import HttpResponse
 from django.utils import simplejson
 from django.conf import settings
+from lxml import etree
 
-import os, datetime, urllib2
+import os, urllib2, pprint, StringIO
 
 def badge(request, podname):
-    json_path = os.path.join(settings.PROJECT_ROOT, 'documents.jsonp')
     svg_path = os.path.join(settings.PROJECT_ROOT, 'badge_version.svg')
 
-    file_time = datetime.datetime.fromtimestamp(os.path.getmtime(json_path))
-    datediff = datetime.datetime.now() - file_time
-    print datediff
+    url = 'http://cocoapods.org/search?query=%s&ids=1&offset=0' % podname
 
-    if datediff.seconds > 60*60: # uma hora
-        download_documents(json_path)
+    with open(svg_path, 'r') as svg_file:
+        try:
+            response = urllib2.urlopen(url)
+            pod_info = simplejson.loads(response.read())
 
-    with open(json_path, 'r') as file, open(svg_path, 'r') as svg_file:
-        json_file = file.read()
+            allocations = pod_info['allocations'][0]
+            name = allocations[3][0][1]
 
-        pod_list= simplejson.loads(json_file)
+            xml = StringIO.StringIO(allocations[5][0])
+            tree = etree.parse(xml)
+            for e in tree.xpath('//span[@class="version"]'):
+                version = e.text.strip()
+                break
 
-        version = 'error'
-
-        for item in pod_list:
-            if item['name'].lower() == podname.lower():
-                version = item['versions'][-1]
+            version = version if name.lower() == podname.lower() else 'error'
+        except Exception, e:
+            version = 'error'
 
         svg_data = svg_file.read().format(version)
         return HttpResponse(svg_data, mimetype="image/svg+xml")
-
-def download_documents(file_path):
-    with open(file_path, "w") as file:
-        response = urllib2.urlopen('http://cocoadocs.org/documents.jsonp')
-
-        file.write(response.read()[12:-21])

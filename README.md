@@ -3,7 +3,7 @@ Cocoapod Badges
 
 [![NSStringMask](http://cocoapod-badges.herokuapp.com/v/nsstringmask/badge.png)](http://cocoadocs.org/docsets/NSStringMask) NSStringMask's latest version badge
 
-Cocoapod Badges are status badges to inform a pod's latest version deployed to [Cocoapods](http://cocoapods.org)!
+Cocoapod Badges are status badges to inform a pod's latest version deployed to [Cocoapods]!
 
 The badges are created with a `SVG` file, thanks to [olivierlacan/shields](https://github.com/olivierlacan/shields) repo that provides badges to:
 
@@ -28,9 +28,7 @@ AFNetworking: [![$AFNetworking](http://cocoapod-badges.herokuapp.com/v/afnetwork
 
 # Warning
 
-The project fetches the latest version through [Cocoapod](http://cocoapods.org)'s pod list file available [here](http://cocoadocs.org/documents.jsonp) that is saved in the server, therefore, it's not updated in real time!
-
-Currently, it's configured to download the file hourly, so, if your badge is not updated immediately after releasing a new version, give it a little time to freshen up!
+The project fetches the latest version through [Cocoapods' search API](http://cocoapods.org/search?query=$PODNAME&ids=1&offset=0), therefore, the badge availability depends on the API's availability.
 
 # License
 
@@ -43,3 +41,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[Cocoapods]: http://cocoapods.org
