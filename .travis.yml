@@ -1,0 +1,22 @@
+language: python
+
+python:
+  - "2.7"
+  - "2.6"
+
+env:
+  - DJANGO=1.5.1
+
+before_install:
+  - export DJANGO_SETTINGS_MODULE=podbadge.settings
+  - export PIP_USE_MIRRORS=true
+
+# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
+install:
+  - pip install .
+#  - pip install -r requirements.txt Django==$DJANGO
+  - pip install django==$DJANGO --quiet
+
+# command to run tests, e.g. python setup.py test
+script:
+  - django-admin.py test podbadge

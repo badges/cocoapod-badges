@@ -8,6 +8,13 @@ ADMINS = (
     (u'Flávio Caetano', 'flavio@vieiracaetano.com'),
 )
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': ''
+    }
+}
+
 MANAGERS = ADMINS
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
@@ -111,6 +118,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'podbadge'
 )
 
 # A sample logging configuration. The only tangible logging
