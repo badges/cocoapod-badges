@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1856571d-311b-40a9-a9af-809990f3a567" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/OpenSans-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/OpenSans-BoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/OpenSans-ExtraBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/OpenSans-ExtraBoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/OpenSans-Italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/OpenSans-Light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/OpenSans-LightItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/OpenSans-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/OpenSans-Semibold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/static/Open_Sans/OpenSans-SemiboldItalic.ttf" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/podbadge/badge_version.svg" afterPath="$PROJECT_DIR$/templates/badge_version.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podbadge/settings.py" afterPath="$PROJECT_DIR$/podbadge/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podbadge/urls.py" afterPath="$PROJECT_DIR$/podbadge/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podbadge/views.py" afterPath="$PROJECT_DIR$/podbadge/views.py" />
     </list>
     <ignored path="cocoapod-badges.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +39,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/podbadge/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="32" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+            <state line="12" column="15" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -39,8 +50,37 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/podbadge/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="48" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.27118644">
+            <state line="6" column="13" selection-start="139" selection-end="139" vertical-scroll-proportion="0.23244552">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="badge_version.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/badge_version.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="8" selection-start="499" selection-end="499" vertical-scroll-proportion="3.6">
+              <folding>
+                <element signature="n#style#0;n#stop#0;n#linearGradient#0;n#g#0;n#svg#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#0;n#g#0;n#svg#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#2;n#linearGradient#0;n#g#0;n#svg#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#3;n#linearGradient#0;n#g#0;n#svg#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#0;n#linearGradient#1;n#g#0;n#svg#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#1;n#linearGradient#1;n#g#0;n#svg#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#2;n#linearGradient#1;n#g#0;n#svg#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#stop#3;n#linearGradient#1;n#g#0;n#svg#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/podbadge/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="30" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#30#77#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,9 +104,10 @@
         <option value="$PROJECT_DIR$/podbadge/models.py" />
         <option value="$PROJECT_DIR$/podbadge/tests.py" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/podbadge/views.py" />
-        <option value="$PROJECT_DIR$/podbadge/badge_version.svg" />
         <option value="$PROJECT_DIR$/podbadge/urls.py" />
+        <option value="$PROJECT_DIR$/podbadge/badge_version.svg" />
+        <option value="$PROJECT_DIR$/podbadge/views.py" />
+        <option value="$PROJECT_DIR$/templates/badge_version.html" />
         <option value="$PROJECT_DIR$/podbadge/settings.py" />
       </list>
     </option>
@@ -118,6 +159,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cocoapod-badges" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cocoapod-badges" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cocoapod-badges" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -188,6 +243,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/podbadge/static" />
       <recent name="$PROJECT_DIR$/podbadge" />
     </key>
@@ -327,10 +383,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -338,12 +395,11 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969373" sideWeight="0.49675852" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969373" sideWeight="0.49756888" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32618684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32618684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -407,7 +463,9 @@
     <entry file="file://$PROJECT_DIR$/podbadge/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#30#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -461,11 +519,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/podbadge/static/Open_Sans/LICENSE.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.1553398" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="35" selection-start="301" selection-end="301" vertical-scroll-proportion="0.5825243">
@@ -482,21 +535,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/podbadge/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="54" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="15" column="30" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#30#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/podbadge/badge_version.svg">
+    <entry file="file://$PROJECT_DIR$/templates/badge_version.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="21" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.13866232">
-          <folding />
+        <state line="4" column="8" selection-start="499" selection-end="499" vertical-scroll-proportion="3.6">
+          <folding>
+            <element signature="n#style#0;n#stop#0;n#linearGradient#0;n#g#0;n#svg#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#0;n#g#0;n#svg#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#2;n#linearGradient#0;n#g#0;n#svg#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#3;n#linearGradient#0;n#g#0;n#svg#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#0;n#linearGradient#1;n#g#0;n#svg#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#1;n#linearGradient#1;n#g#0;n#svg#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#2;n#linearGradient#1;n#g#0;n#svg#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#stop#3;n#linearGradient#1;n#g#0;n#svg#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/podbadge/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+        <state line="12" column="15" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
@@ -505,7 +569,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/podbadge/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="48" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.27118644">
+        <state line="6" column="13" selection-start="139" selection-end="139" vertical-scroll-proportion="0.23244552">
           <folding />
         </state>
       </provider>
