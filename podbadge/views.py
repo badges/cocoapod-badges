@@ -39,5 +39,5 @@ def badge(request, podname):
         except Exception, e:
             version = 'error'
 
-        svg_data = svg_file.read().format(version)
+        svg_data = svg_file.read() % (version, version)
         return HttpResponse(svg_data, mimetype="image/svg+xml")
