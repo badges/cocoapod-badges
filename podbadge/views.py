@@ -18,7 +18,7 @@ def badge(request, podname):
             pod_info = simplejson.loads(response.read())
 
             allocations = pod_info['allocations'][0]
-            name = allocations[3][0][1]
+            name = allocations[4][0]
 
             xml = StringIO.StringIO(allocations[5][0])
             tree = etree.parse(xml)
