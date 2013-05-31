@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1856571d-311b-40a9-a9af-809990f3a567" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/podbadge/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/podbadge/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podbadge/settings.py" afterPath="$PROJECT_DIR$/podbadge/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="cocoapod-badges.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,7 +56,7 @@
       <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="33" selection-start="469" selection-end="469" vertical-scroll-proportion="0.76642334">
+            <state line="15" column="35" selection-start="301" selection-end="301" vertical-scroll-proportion="0.5839416">
               <folding />
             </state>
           </provider>
@@ -501,7 +496,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="33" selection-start="469" selection-end="469" vertical-scroll-proportion="0.76642334">
+        <state line="15" column="35" selection-start="301" selection-end="301" vertical-scroll-proportion="0.5839416">
           <folding />
         </state>
       </provider>

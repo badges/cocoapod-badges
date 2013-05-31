@@ -13,10 +13,8 @@ before_install:
 
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install:
-  - pip install .
-#  - pip install -r requirements.txt Django==$DJANGO
-  - pip install django==$DJANGO --quiet
+  - pip install -r requirements.txt
 
 # command to run tests, e.g. python setup.py test
 script:
-  - django-admin.py test podbadge
+  - python manage.py test podbadge
