@@ -37,4 +37,8 @@ def badge(request, podname):
     except Exception, e:
         version = 'error'
 
-    return render_to_response('badge_version.html', {'VERSION':version}, mimetype="image/svg+xml")
+    return render_to_response('badge_version.html', {
+        'VERSION':version,
+        'WIDTH': 88,
+        'TOTAL_WIDTH': 120,
+    }, mimetype="image/svg+xml")
