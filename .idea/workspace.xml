@@ -2,26 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1856571d-311b-40a9-a9af-809990f3a567" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/podbadge/views/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/badge_platform.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/podbadge/views/v2.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/pip-delete-this-directory.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/podbadge/models.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/podbadge/views.py" afterPath="$PROJECT_DIR$/podbadge/views/v1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.Python" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/sass_stdlib.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/other.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/testrunner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/badge_version.html" afterPath="$PROJECT_DIR$/templates/badge_version.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cocoapod-badges.iml" afterPath="$PROJECT_DIR$/.idea/cocoapod-badges.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podbadge/settings.py" afterPath="$PROJECT_DIR$/podbadge/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podbadge/models.py" afterPath="$PROJECT_DIR$/podbadge/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podbadge/tests.py" afterPath="$PROJECT_DIR$/podbadge/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podbadge/urls.py" afterPath="$PROJECT_DIR$/podbadge/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cocoapod-badges.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1856571d-311b-40a9-a9af-809990f3a567" time="1370355824200" ignored="false" />
+    <file path="/Dummy.txt" changelist="1856571d-311b-40a9-a9af-809990f3a567" time="1370370150767" ignored="false" />
     <file path="/urls.py" changelist="1856571d-311b-40a9-a9af-809990f3a567" time="1370356127517" ignored="false" />
     <file path="/v2.py" changelist="1856571d-311b-40a9-a9af-809990f3a567" time="1370358743241" ignored="false" />
     <file path="/settings.py" changelist="1856571d-311b-40a9-a9af-809990f3a567" time="1370355536793" ignored="false" />
@@ -48,13 +48,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="v2.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="v2.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/podbadge/views/v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="29" selection-start="304" selection-end="304" vertical-scroll-proportion="-0.5055762">
+            <state line="34" column="48" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#30#87#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/podbadge/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/podbadge/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="7" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="-0.017797552">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,8 +116,9 @@
         <option value="$PROJECT_DIR$/templates/badge_version.html" />
         <option value="$PROJECT_DIR$/podbadge/views/v2.py" />
         <option value="$PROJECT_DIR$/templates/badge_platform.html" />
-        <option value="$PROJECT_DIR$/podbadge/tests.py" />
         <option value="$PROJECT_DIR$/podbadge/views/v1.py" />
+        <option value="$PROJECT_DIR$/podbadge/tests.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -197,12 +225,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="last_opened_file_path" value="$USER_HOME$/virtual_envs" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -260,29 +288,6 @@
       <option name="OPTIONS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="cocoapod-badges" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -304,6 +309,29 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="cocoapod-badges" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -395,8 +423,8 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17769477" sideWeight="0.6034115" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39658847" sideWeight="0.49675852" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17982924" sideWeight="0.6034115" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3956386" sideWeight="0.49675852" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969373" sideWeight="0.49756888" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3251599" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -495,11 +523,6 @@
         <state line="0" column="4" selection-start="0" selection-end="4" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.Python">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="9633" selection-end="9636" vertical-scroll-proportion="0.23491028" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="77" selection-end="77" vertical-scroll-proportion="0.21917808">
@@ -514,9 +537,7 @@
     </entry>
     <entry file="file://$USER_HOME$/virtual_envs/cocoapod_badges/lib/python2.7/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="0" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.3320965">
-          <folding />
-        </state>
+        <state line="114" column="0" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.3320965" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/podbadge/urls.py">
@@ -533,25 +554,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/podbadge/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="50" selection-start="2535" selection-end="2535" vertical-scroll-proportion="2.035316">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/badge_platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="71" selection-start="981" selection-end="981" vertical-scroll-proportion="0.35928145">
-          <folding />
-        </state>
+        <state line="12" column="71" selection-start="981" selection-end="981" vertical-scroll-proportion="0.35928145" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/badge_version.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="248" selection-start="481" selection-end="481" vertical-scroll-proportion="0.029940119">
-          <folding />
-        </state>
+        <state line="3" column="248" selection-start="481" selection-end="481" vertical-scroll-proportion="0.029940119" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/podbadge/settings.py">
@@ -563,10 +573,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/podbadge/views/v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="304" selection-end="304" vertical-scroll-proportion="-0.5055762">
+        <state line="34" column="48" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#30#87#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/podbadge/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/podbadge/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="7" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="-0.017797552">
+          <folding />
         </state>
       </provider>
     </entry>

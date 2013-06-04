@@ -50,10 +50,26 @@ class BadgeTestCase(TestCase):
         self.assertFalse('error' in response.content)
 
         response = c.get('/v/aowdijaowijaowidjaowidjaowij/badge.png')
+        self.assertEqual(response.status_code, 302)
+
+        response = c.get('/v/nsstr/ingmask/badge.png')
+        self.assertEqual(response.status_code, 302)
+
+    def test_badge_p(self):
+        c = Client()
+
+        response = c.get('/p/')
+        self.assertEqual(response.status_code, 404)
+
+        response = c.get('/p/nsstringmask/badge.png')
         self.assertEqual(response.status_code, 200)
         self.assertTrue('error' in response.content)
 
-        response = c.get('/v/nsstr/ingmask/badge.png')
+        response = c.get('/p/NSStringMask/badge.png')
+        self.assertEqual(response.status_code, 200)
+        self.assertFalse('error' in response.content)
+
+        response = c.get('/p/aowdijaowijaowidjaowidjaowij/badge.png')
         self.assertEqual(response.status_code, 200)
         self.assertTrue('error' in response.content)
 
