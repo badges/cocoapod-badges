@@ -1,9 +1,9 @@
 Cocoapod Badges [![Build Status](https://travis-ci.org/fjcaetano/cocoapod-badges.png?branch=travis)](https://travis-ci.org/fjcaetano/cocoapod-badges)
 ===============
 
-[![NSStringMask](http://localhost:8000/v/nsstringmask/badge.png)](http://cocoadocs.org/docsets/NSStringMask) NSStringMask's latest version badge
+[![NSStringMask](http://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](http://cocoadocs.org/docsets/NSStringMask) NSStringMask's latest version badge
 
-Cocoapod Badges are status badges to inform a pod's latest version deployed to [Cocoapods]!
+Cocoapod Badges are status badges to inform a pod's latest version deployed to [Cocoapods] through their [simple API](https://github.com/CocoaPods/cocoapods.org/commit/8ef51c7890c33ad899e8130b9e778c740c5c7f61).
 
 The badges are created with a `SVG` file, thanks to [olivierlacan/shields](https://github.com/olivierlacan/shields) repo that provides badges to:
 
@@ -19,16 +19,31 @@ The "badge service" is hosted at [Heroku](https://www.heroku.com/)
 
 # Usage
 
-Simple enough, all you have to do is replace the `$PODNAME` bellow with the name of the pod and the badge will automatically fetch the latest release available in [Cocoapods](http://cocoapods.org)!
+Just replace the `$PODNAME` on both URLs and the badge will automatically fetch the info.
+
+**_ATTENTION_**: The `$PODNAME` is case sensitive, since [Cocoapods] has differentiation! In case of unexpected issues, the badges will display "error".
+
+## Version Badge
+
+Displays the pod's latest version available.
 
 	http://cocoapod-badges.herokuapp.com/v/$PODNAME/badge.png
 
+[![NSStringMask](http://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](http://cocoadocs.org/docsets/NSStringMask)
 
-AFNetworking: [![$AFNetworking](http://cocoapod-badges.herokuapp.com/v/afnetworking/badge.png)](http://cocoadocs.org/docsets/AFNetworking)
+## Platforms Badge
 
-# Warning
+For this to be available, the pod must provide this information, which is optional. If it's not set, the badge will display "error", even though `$PODNAME` may be correct!
 
-The project fetches the latest version through [Cocoapods' search API](http://cocoapods.org/search?query=$PODNAME&ids=1&offset=0), therefore, the badge availability depends on the API's availability.
+	http://cocoapod-badges.herokuapp.com/p/$PODNAME/badge.png
+
+iOS | OSX | iOS/OSX | error
+--- | --- | ------- | -----
+![ios](http://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge.png) | ![osx](http://cocoapod-badges.herokuapp.com/p/ARCHelper/badge.png) | ![ios/osx](http://cocoapod-badges.herokuapp.com/p/AFNetworking/badge.png) | ![error](http://cocoapod-badges.herokuapp.com/p/Kiwi/badge.png)
+
+## Deprecation Warning
+
+This is a new version of Cocoapod Badges! The previous version (case insensitive) is still available at `/v1/` for continuity reasons but it's **deprecated** and its support will stop! All you have to do is fix upper and lower case letters on your badge's URL.
 
 # License
 
