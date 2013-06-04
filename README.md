@@ -1,7 +1,8 @@
 Cocoapod Badges [![Build Status](https://travis-ci.org/fjcaetano/cocoapod-badges.png)](https://travis-ci.org/fjcaetano/cocoapod-badges)
 ===============
 
-[![NSStringMask](http://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](http://cocoadocs.org/docsets/NSStringMask) NSStringMask's latest version badge
+[![Badge w/ Version](http://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](http://cocoadocs.org/docsets/NSStringMask)
+[![Badge w/ Platform](http://cocoapod-badges.herokuapp.com/p/NSStringMask/badge.png)](http://cocoadocs.org/docsets/NSStringMask)
 
 Cocoapod Badges are status badges to inform a pod's latest version deployed to [Cocoapods] through their [simple API](https://github.com/CocoaPods/cocoapods.org/commit/8ef51c7890c33ad899e8130b9e778c740c5c7f61).
 
