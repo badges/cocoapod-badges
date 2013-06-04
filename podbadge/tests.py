@@ -88,7 +88,7 @@ class BadgeTestCase(TestCase):
         self.assertFalse('error' in response.content)
 
         response = c.get('/p/aowdijaowijaowidjaowidjaowij/badge.png')
-        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.status_code, 200)
         self.assertTrue('error' in response.content)
 
         response = c.get('/p/nsstr/ingmask/badge.png')

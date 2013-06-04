@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1856571d-311b-40a9-a9af-809990f3a567" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.Python" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/sass_stdlib.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/other.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/testrunner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cocoapod-badges.iml" afterPath="$PROJECT_DIR$/.idea/cocoapod-badges.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podbadge/models.py" afterPath="$PROJECT_DIR$/podbadge/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podbadge/tests.py" afterPath="$PROJECT_DIR$/podbadge/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cocoapod-badges.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,39 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="v2.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/podbadge/views/v2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="48" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#30#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/podbadge/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="tests.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/podbadge/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="7" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="-0.017797552">
+            <state line="90" column="50" selection-start="3009" selection-end="3009" vertical-scroll-proportion="0.75328946">
               <folding />
             </state>
           </provider>
@@ -117,8 +73,8 @@
         <option value="$PROJECT_DIR$/podbadge/views/v2.py" />
         <option value="$PROJECT_DIR$/templates/badge_platform.html" />
         <option value="$PROJECT_DIR$/podbadge/views/v1.py" />
-        <option value="$PROJECT_DIR$/podbadge/tests.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/podbadge/tests.py" />
       </list>
     </option>
   </component>
@@ -571,32 +527,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="49" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.29922137">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/podbadge/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.016447369">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/podbadge/views/v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="48" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
+        <state line="34" column="48" selection-start="862" selection-end="862" vertical-scroll-proportion="0.4989035">
           <folding>
             <element signature="e#30#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/podbadge/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/podbadge/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="7" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="-0.017797552">
+        <state line="90" column="50" selection-start="3009" selection-end="3009" vertical-scroll-proportion="0.75328946">
           <folding />
         </state>
       </provider>

@@ -1,4 +1,4 @@
-Cocoapod Badges [![Build Status](https://travis-ci.org/fjcaetano/cocoapod-badges.png?branch=travis)](https://travis-ci.org/fjcaetano/cocoapod-badges)
+Cocoapod Badges [![Build Status](https://travis-ci.org/fjcaetano/cocoapod-badges.png)](https://travis-ci.org/fjcaetano/cocoapod-badges)
 ===============
 
 [![NSStringMask](http://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](http://cocoadocs.org/docsets/NSStringMask) NSStringMask's latest version badge
