@@ -20,7 +20,7 @@ def version(request, podname):
         version = 'error'
 
     width = 63+5*len(version)
-    total_width = 73 + width
+    total_width = 25 + width
 
     return render_to_response('badge_version.html', {
         'VERSION':version,
@@ -32,7 +32,7 @@ def platform(request, podname):
     try:
         pod_info = get_pod_info(podname)
 
-        platforms = pod_info['platforms'].keys()
+        platforms = pod_info.get('platforms', {'osx': '', 'ios': ''}).keys()
         width = 80 if len(platforms) == 1 else 104
 
         platforms = '/'.join(platforms)
@@ -40,7 +40,7 @@ def platform(request, podname):
         platforms = 'error'
         width = 90
 
-    total_width = 73 + width
+    total_width = 25 + width
 
     return render_to_response('badge_platform.html', {
         'PLATFORM':platforms,
