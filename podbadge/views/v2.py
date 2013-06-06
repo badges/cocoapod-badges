@@ -19,12 +19,12 @@ def version(request, podname):
     except Exception, e:
         version = 'error'
 
-    width = 63+5*len(version)
+    width = 44+5*len(version)
     total_width = 25 + width
 
     return render_to_response('badge_version.html', {
         'VERSION':version,
-        'WIDTH': 63+5*len(version),
+        'WIDTH': width,
         'TOTAL_WIDTH': total_width,
     }, mimetype="image/svg+xml")
 
