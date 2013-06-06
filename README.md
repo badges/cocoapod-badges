@@ -2,7 +2,7 @@ Cocoapod Badges [![Build Status](https://travis-ci.org/fjcaetano/cocoapod-badges
 ===============
 
 [![Badge w/ Version](http://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](http://cocoadocs.org/docsets/NSStringMask)
-[![Badge w/ Platform](http://cocoapod-badges.herokuapp.com/p/NSStringMask/badge.png)](http://cocoadocs.org/docsets/NSStringMask)
+[![Badge w/ Platform](http://cocoapod-badges.herokuapp.com/p/NSStringMask/badge.svg)](http://cocoadocs.org/docsets/NSStringMask)
 
 Cocoapod Badges are status badges to inform a pod's latest version deployed to [Cocoapods] through their [simple API](https://github.com/CocoaPods/cocoapods.org/commit/8ef51c7890c33ad899e8130b9e778c740c5c7f61).
 
@@ -34,17 +34,16 @@ Displays the pod's latest version available.
 
 ## Platforms Badge
 
-For this to be available, the pod must provide this information, which is optional. If it's not set, the badge will display "error", even though `$PODNAME` may be correct!
+For this to be available, the pod must provide this information, which is optional. If it's not set, the badge will display "error", even though `$PODNAME` may be correct! You can also choose between displaying an SVG and PNG.
 
-	http://cocoapod-badges.herokuapp.com/p/$PODNAME/badge.png
+**CAUTION!** It's recommended to use SVG since it's rendering is much better than PNG, but it may cause problems with some browsers!
 
-iOS | OSX | iOS/OSX | error
---- | --- | ------- | -----
-![ios](http://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge.png) | ![osx](http://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge.png) | ![ios/osx](http://cocoapod-badges.herokuapp.com/p/AFNetworking/badge.png) | ![error](http://cocoapod-badges.herokuapp.com/p/error/badge.png)
+	http://cocoapod-badges.herokuapp.com/p/$PODNAME/badge.(png|svg)
 
-## Deprecation Warning
-
-This is a new version of Cocoapod Badges! The previous version (case insensitive) is still available at `/v1/` for continuity reasons but it's **deprecated** and its support will stop! All you have to do is fix upper and lower case letters on your badge's URL.
+type | iOS | OSX | iOS/OSX | error
+---- | --- | --- | ------- | -----
+SVG | ![ios](http://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge.svg) | ![osx](http://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge.svg) | ![ios/osx](http://cocoapod-badges.herokuapp.com/p/AFNetworking/badge.svg) | ![error](http://cocoapod-badges.herokuapp.com/p/error/badge.svg)
+PNG | ![ios](http://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge.png) | ![osx](http://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge.png) | ![ios/osx](http://cocoapod-badges.herokuapp.com/p/AFNetworking/badge.png) | ![error](http://cocoapod-badges.herokuapp.com/p/error/badge.png)
 
 # License
 

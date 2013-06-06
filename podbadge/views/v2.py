@@ -1,9 +1,11 @@
 __author__ = 'flaviocaetano'
 
-from django.shortcuts import render_to_response, redirect
+from django.shortcuts import render_to_response
 from django.utils import simplejson
+from django.conf import settings
+from django.http import HttpResponse
 
-import os, urllib2, StringIO
+import urllib2, os
 
 def version(request, podname):
     try:
@@ -11,9 +13,6 @@ def version(request, podname):
 
         version = pod_info['version']
     except urllib2.HTTPError, e:
-        if e.code == 404:
-            return redirect('/v1/%s/badge.png' % podname)
-
         version = 'error'
             
     except Exception, e:
@@ -28,7 +27,7 @@ def version(request, podname):
         'TOTAL_WIDTH': total_width,
     }, mimetype="image/svg+xml")
 
-def platform(request, podname):
+def platform(request, podname, ext):
     try:
         pod_info = get_pod_info(podname)
 
@@ -42,15 +41,24 @@ def platform(request, podname):
 
     total_width = 25 + width
 
+    try:
+        if ext == 'png':
+            # Return image
+            with open(os.path.join(settings.STATIC_ROOT, platforms.replace('/', '')+'.png'), 'r') as file:
+                return HttpResponse(file.read(), mimetype='image/png')
+    except Exception, e:
+        pass
+
+    # Return svg
     return render_to_response('badge_platform.html', {
         'PLATFORM':platforms,
         'WIDTH': width,
         'TOTAL_WIDTH': total_width,
     }, mimetype="image/svg+xml")
 
-def badge(request, info, podname):
+def badge(request, info, podname, ext):
     if info == 'p':
-        return platform(request, podname)
+        return platform(request, podname, ext)
 
     return version(request, podname)
 
