@@ -33,7 +33,7 @@ def platform(request, podname):
         pod_info = get_pod_info(podname)
 
         platforms = pod_info.get('platforms', {'osx': '', 'ios': ''}).keys()
-        width = 80 if len(platforms) == 1 else 104
+        width = 62 if len(platforms) == 1 else 86
 
         platforms = '/'.join(platforms)
     except Exception, e:
