@@ -38,7 +38,7 @@ def platform(request, podname):
         platforms = '/'.join(platforms)
     except Exception, e:
         platforms = 'error'
-        width = 90
+        width = 75
 
     total_width = 25 + width
 
