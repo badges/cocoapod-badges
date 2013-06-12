@@ -8,13 +8,13 @@ from django.http import HttpResponse
 import urllib2
 import os
 
-def version(request, podname):
 
+def version(request, podname):
     try:
         pod_info = get_pod_info(podname)
 
         version = pod_info['version']
-    except urllib2.HTTPError, e:
+    except urllib2.HTTPError:
         version = 'error'
 
     except Exception:
@@ -29,8 +29,8 @@ def version(request, podname):
         'TOTAL_WIDTH': total_width,
     }, mimetype="image/svg+xml")
 
-def platform(request, podname, ext):
 
+def platform(request, podname, ext):
     try:
         pod_info = get_pod_info(podname)
 
@@ -38,7 +38,7 @@ def platform(request, podname, ext):
         width = 62 if len(platforms) == 1 else 86
 
         platforms = '/'.join(platforms)
-    except Exception, e:
+    except Exception:
         platforms = 'error'
         width = 75
 
@@ -64,15 +64,15 @@ def platform(request, podname, ext):
         'TOTAL_WIDTH': total_width,
     }, mimetype="image/svg+xml")
 
-def badge(request, info, podname, ext):
 
+def badge(request, info, podname, ext):
     if info == 'p':
         return platform(request, podname, ext)
 
     return version(request, podname)
 
-def get_pod_info(podname):
 
+def get_pod_info(podname):
     url = 'http://cocoapods.org/api/v1/pod/%s.json' % (podname, )
 
     response = urllib2.urlopen(url)
