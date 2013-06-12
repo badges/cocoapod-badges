@@ -110,7 +110,7 @@ WSGI_APPLICATION = 'podbadge.wsgi.application'
 TEMPLATE_DIRS = (os.path.join(
     os.path.dirname(__file__),
     '..',
-    'templates').replace('\\','/'),
+    'templates').replace('\\', '/'),
 )
 
 INSTALLED_APPS = (

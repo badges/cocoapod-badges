@@ -4,8 +4,8 @@ from django.test import TestCase
 
 from django.test.client import Client
 
-class BadgeTestCase(TestCase):
 
+class BadgeTestCase(TestCase):
     def test_root(self):
         c = Client()
 
