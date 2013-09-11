@@ -9,7 +9,7 @@ import urllib2
 import os
 
 
-def version(request, podname):
+def version(request, podname, retina=False):
     try:
         pod_info = get_pod_info(podname)
 
@@ -20,7 +20,7 @@ def version(request, podname):
     except Exception:
         version = 'error'
 
-    width = 44+5*len(version)
+    width = 33+5*len(version)
     total_width = 25 + width
 
     return render_to_response('badge_version.html', {
@@ -30,17 +30,17 @@ def version(request, podname):
     }, mimetype="image/svg+xml")
 
 
-def platform(request, podname, ext):
+def platform(request, podname, ext, retina=False):
     try:
         pod_info = get_pod_info(podname)
 
         platforms = pod_info.get('platforms', {'osx': '', 'ios': ''}).keys()
-        width = 62 if len(platforms) == 1 else 86
+        width = 53 if len(platforms) == 1 else 74
 
         platforms = '/'.join(platforms)
     except Exception:
         platforms = 'error'
-        width = 75
+        width = 64
 
     total_width = 25 + width
 

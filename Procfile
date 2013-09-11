@@ -1,1 +1,1 @@
-web: newrelic-admin run-program gunicorn podbadge.wsgi -w 3
+web: gunicorn podbadge.wsgi
