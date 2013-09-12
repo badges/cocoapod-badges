@@ -1,4 +1,4 @@
-Cocoapod Badges [![Build Status](https://travis-ci.org/fjcaetano/cocoapod-badges.png)](https://travis-ci.org/fjcaetano/cocoapod-badges) [![codeq](https://codeq.io/github/fjcaetano/cocoapod-badges/badges/master.png)](https://codeq.io/github/fjcaetano/cocoapod-badges/branches/master)
+Cocoapod Badges [![Build Status](https://travis-ci.org/fjcaetano/cocoapod-badges.png)](https://travis-ci.org/fjcaetano/cocoapod-badges)
 ===============
 
 [![Badge w/ Version](http://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](http://cocoadocs.org/docsets/NSStringMask)
@@ -14,36 +14,59 @@ The badges are created with a `SVG` file, thanks to [olivierlacan/shields](https
 - [Gemnasium](http://blog.tech-angels.com/post/43141047457/gemnasium-v3-aka-gemnasium)
 - [Travis CI](http://about.travis-ci.org/docs/user/status-images/)
 
-No images are generated. The badges are `SVG` files compiled by the browser. They may be saved, but if you look at their source code, you'll be able to see the `SVG` xml file.
-
 The "badge service" is hosted at [Heroku](https://www.heroku.com/)
 
 # Usage
 
-Just replace the `$PODNAME` on both URLs and the badge will automatically fetch the info.
+Just replace the `$PODNAME` on the URLs and the badge will automatically fetch the info.
 
 **_ATTENTION_**: The `$PODNAME` is case sensitive, since [Cocoapods] has differentiation! In case of unexpected issues, the badges will display "error".
+
+The badges might be displayed as SVG or PNG, depending on the requested extension, though we strongly recommend using SVG since it's rendering is much better than PNG. But be aware that it may cause some problems with some browsers.
+
+## Retina Display
+
+All badges may be requested for retina display. All that is needed is the `@2x` on the file name:
+
+	http://cocoapod-badges.herokuapp.com/v/$PODNAME/badge@2x.(png|svg)
+	
+	http://cocoapod-badges.herokuapp.com/p/$PODNAME/badge@2x.(png|svg)
 
 ## Version Badge
 
 Displays the pod's latest version available.
 
-	http://cocoapod-badges.herokuapp.com/v/$PODNAME/badge.png
+	http://cocoapod-badges.herokuapp.com/v/$PODNAME/badge.(png|svg)
 
 [![NSStringMask](http://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](http://cocoadocs.org/docsets/NSStringMask)
 
+Some folks were having trouble with Github's cache for the README file, so I enabled a URL parameter to set the version manually.
+
+	http://cocoapod-badges.herokuapp.com/v/$PODNAME/$VERSION/badge.(png|svg)
+
+[![NSStringMask](http://cocoapod-badges.herokuapp.com/v/NSStringMask/$VERSION/badge.png)](http://cocoadocs.org/docsets/NSStringMask)
+
+| type | 1.0 | 1.1.2 | 1.0-RC1 | error |
+|------|-----|-------|---------|-------|
+| SVG | ![ios](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.0/badge.svg) | ![osx](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.1.2/badge.svg) | ![ios/osx](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.0-RC1/badge.svg) | ![error](http://cocoapod-badges.herokuapp.com/v/error/badge.svg) |
+| PNG | ![ios](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.0/badge.png) | ![osx](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.1.2/badge.png) | ![ios/osx](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.0-RC1/badge.png) | ![error](http://cocoapod-badges.herokuapp.com/v/error/badge.png) |
+| **RETINA** |
+| SVG | ![ios](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.0/badge@2x.svg) | ![osx](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.1.2/badge@2x.svg) | ![ios/osx](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.0-RC1/badge@2x.svg) | ![error](http://cocoapod-badges.herokuapp.com/v/error/badge@2x.svg) |
+| PNG | ![ios](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.0/badge@2x.png) | ![osx](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.1.2/badge@2x.png) | ![ios/osx](http://cocoapod-badges.herokuapp.com/v/NSStringMask/1.0-RC1/badge@2x.png) | ![error](http://cocoapod-badges.herokuapp.com/v/error/badge@2x.png) |
+
 ## Platforms Badge
 
-For this to be available, the pod must provide this information, which is optional. If it's not set, the badge will display "error", even though `$PODNAME` may be correct! You can also choose between displaying an SVG and PNG.
-
-**CAUTION!** It's recommended to use SVG since it's rendering is much better than PNG, but it may cause problems with some browsers!
+For the platform info to be available, the pod must provide this in the Podspec, but it's optional. If the platform not set, the badge will display "error", even though `$PODNAME` may be correct! You can also choose between displaying an SVG and PNG.
 
 	http://cocoapod-badges.herokuapp.com/p/$PODNAME/badge.(png|svg)
 
-type | iOS | OSX | iOS/OSX | error
----- | --- | --- | ------- | -----
-SVG | ![ios](http://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge.svg) | ![osx](http://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge.svg) | ![ios/osx](http://cocoapod-badges.herokuapp.com/p/AFNetworking/badge.svg) | ![error](http://cocoapod-badges.herokuapp.com/p/error/badge.svg)
-PNG | ![ios](http://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge.png) | ![osx](http://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge.png) | ![ios/osx](http://cocoapod-badges.herokuapp.com/p/AFNetworking/badge.png) | ![error](http://cocoapod-badges.herokuapp.com/p/error/badge.png)
+| type | iOS | OSX | iOS/OSX | error
+|------|-----|-----|---------|-------|
+| SVG | ![ios](http://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge.svg) | ![osx](http://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge.svg) | ![ios/osx](http://cocoapod-badges.herokuapp.com/p/AFNetworking/badge.svg) | ![error](http://cocoapod-badges.herokuapp.com/p/error/badge.svg) |
+| PNG | ![ios](http://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge.png) | ![osx](http://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge.png) | ![ios/osx](http://cocoapod-badges.herokuapp.com/p/AFNetworking/badge.png) | ![error](http://cocoapod-badges.herokuapp.com/p/error/badge.png) |
+| **RETINA** |
+| SVG | ![ios](http://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge@2x.svg) | ![osx](http://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge@2x.svg) | ![ios/osx](http://cocoapod-badges.herokuapp.com/p/AFNetworking/badge@2x.svg) | ![error](http://cocoapod-badges.herokuapp.com/p/error/badge@2x.svg) |
+| PNG | ![ios](http://cocoapod-badges.herokuapp.com/p/NSStringMask/1.0/badge@2x.png) | ![osx](http://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge@2x.png) | ![ios/osx](http://cocoapod-badges.herokuapp.com/p/AFNetworking/badge@2x.png) | ![error](http://cocoapod-badges.herokuapp.com/p/error/badge@2x.png) |
 
 # License
 
