@@ -5,11 +5,18 @@ from django.utils import simplejson
 from django.conf import settings
 from django.http import HttpResponse
 
+from podbadge.utils import helpers
+
+import cairosvg
 import urllib2
 import os
 
 
-def version(request, podname, retina=False):
+def version(request, podname, ext, retina=''):
+    template_name = 'badge_version.html'
+
+    retina = retina or ''
+
     try:
         pod_info = get_pod_info(podname)
 
@@ -21,16 +28,33 @@ def version(request, podname, retina=False):
         version = 'error'
 
     width = 33+5*len(version)
-    total_width = 25 + width
+    total_width = 26 + width
+    total_height = 21
 
-    return render_to_response('badge_version.html', {
+    response_dict = {
         'VERSION': version,
         'WIDTH': width,
         'TOTAL_WIDTH': total_width,
-    }, mimetype="image/svg+xml")
+        'RETINA_WIDTH': total_width * (2 if retina == '@2x' else 1),
+        'RETINA_HEIGHT': total_height * (2 if retina == '@2x' else 1),
+    }
+
+    try:
+        if ext == 'png':
+            image_name = version+retina
+            return HttpResponse(helpers.svg2png(image_name, response_dict, template_name), mimetype='image/png')
+    except Exception:
+        raise
+        pass
+
+    return render_to_response(template_name, response_dict, mimetype="image/svg+xml")
 
 
-def platform(request, podname, ext, retina=False):
+def platform(request, podname, ext, retina=''):
+    template_name = 'badge_platform.html'
+
+    retina = retina or ''
+
     try:
         pod_info = get_pod_info(podname)
 
@@ -42,34 +66,33 @@ def platform(request, podname, ext, retina=False):
         platforms = 'error'
         width = 64
 
-    total_width = 25 + width
+    total_width = 26 + width
+    total_height = 21
+
+    response_dict = {
+        'PLATFORM': platforms,
+        'WIDTH': width,
+        'TOTAL_WIDTH': total_width,
+        'RETINA_WIDTH': total_width * (2 if retina == '@2x' else 1),
+        'RETINA_HEIGHT': total_height * (2 if retina == '@2x' else 1),
+    }
 
     try:
         if ext == 'png':
-
-            image_path = os.path.join(
-                settings.STATIC_ROOT,
-                platforms.replace('/', '')+'.png'
-            )
-            # Return image
-            with open(image_path, 'r') as file:
-                return HttpResponse(file.read(), mimetype='image/png')
+            image_name = platforms.replace('/', '')+retina
+            return HttpResponse(helpers.svg2png(image_name, response_dict, 'badge_platform.html'), mimetype='image/png')
     except Exception:
         pass
 
     # Return svg
-    return render_to_response('badge_platform.html', {
-        'PLATFORM': platforms,
-        'WIDTH': width,
-        'TOTAL_WIDTH': total_width,
-    }, mimetype="image/svg+xml")
+    return render_to_response(template_name, response_dict, mimetype="image/svg+xml")
 
 
-def badge(request, info, podname, ext):
+def badge(request, info, podname, ext, retina=False):
     if info == 'p':
-        return platform(request, podname, ext)
+        return platform(request, podname, ext, retina)
 
-    return version(request, podname)
+    return version(request, podname, ext, retina)
 
 
 def get_pod_info(podname):

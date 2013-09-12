@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     url(r'^$', RedirectView.as_view(
         url='http://fjcaetano.github.io/cocoapod-badges'
     )),
-    url(r'^(?P<info>[pv])/(?P<podname>.*?)/badge.(?P<ext>(png|svg))$',
+    url(r'^(?P<info>[pv])/(?P<podname>.*?)/badge(?:(?P<retina>@2x))?.(?P<ext>(png|svg))$',
         'podbadge.views.v2.badge'),
     # (r'^static/(?P<path>.*)$', 'django.views.static.serve', {
     #     'document_root':
