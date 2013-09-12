@@ -2,9 +2,11 @@ __author__ = 'Flavio'
 
 from django.conf import settings
 from django.shortcuts import render_to_response
+from django.utils import simplejson
 
 import os
 import cairosvg
+import urllib2
 
 def svg2png(image_name, response_dict, template_name):
 
@@ -23,3 +25,10 @@ def svg2png(image_name, response_dict, template_name):
     # Return image
     with open(image_path, 'r') as file:
         return file.read()
+
+
+def get_pod_info(podname):
+    url = 'http://cocoapods.org/api/v1/pod/%s.json' % (podname, )
+
+    response = urllib2.urlopen(url)
+    return simplejson.loads(response.read())

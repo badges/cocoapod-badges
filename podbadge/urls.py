@@ -1,4 +1,4 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import patterns, url, include
 from django.views.generic import RedirectView
 
 # from django.conf import settings
@@ -11,10 +11,7 @@ urlpatterns = patterns('',
     url(r'^$', RedirectView.as_view(
         url='http://fjcaetano.github.io/cocoapod-badges'
     )),
-    url(r'^(?P<info>[pv])/(?P<podname>.*?)/badge(?:(?P<retina>@2x))?.(?P<ext>(png|svg))$',
-        'podbadge.views.v2.badge'),
-    # (r'^static/(?P<path>.*)$', 'django.views.static.serve', {
-    #     'document_root':
-    #         settings.STATIC_ROOT
-    # }),
+
+    url(r'^p', include('podbadge.views.platform')),
+    url(r'^v', include('podbadge.views.version')),
 )
