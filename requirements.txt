@@ -1,3 +1,4 @@
+pylibmc==1.2.3
 CairoSVG==1.0
 Django==1.5.3
 cairocffi==0.5.1
