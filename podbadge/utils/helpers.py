@@ -3,12 +3,13 @@ __author__ = 'Flavio'
 from django.conf import settings
 from django.utils import simplejson
 
+import urllib
 import urllib2
 import mimetypes
 
 
 def prepare_shield(vendor, status):
-    url = shield_url(vendor, status)
+    url = shield_url(vendor, clean_info(status))
     return fetch_shield(url)
 
 
@@ -27,6 +28,11 @@ def fetch_shield(url):
     mimetype = mimetypes.guess_type(url)
 
     return contents, mimetype
+
+
+def clean_info(info):
+    clean = info.replace('-', '--').replace(' ', '_')
+    return urllib.quote(clean)
 
 
 def get_pod_info(podname):
