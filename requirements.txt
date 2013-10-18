@@ -1,5 +1,4 @@
-Django==1.5.3
-distribute==0.7.3
+Django==1.5.4
 gunicorn==18.0
-newrelic==2.0.0.1
+newrelic==2.4.0.4
 wsgiref==0.1.2

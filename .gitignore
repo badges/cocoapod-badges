@@ -33,6 +33,7 @@ Icon
 Thumbs.db
 .tmtags
 .idea
+.env
 tags
 vendor.tags
 tmtagsHistory
