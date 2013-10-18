@@ -20,7 +20,7 @@ class VersionView( View ):
             except Exception:
                 version = 'error'
 
-        contents, mimetype = helpers.prepare_shield('pod', version)
+        contents, mimetype = helpers.prepare_shield('version', version)
         return HttpResponse(contents, mimetype=mimetype)
 
 ############
