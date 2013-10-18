@@ -18,6 +18,9 @@ DATABASES = {
     }
 }
 
+SHIELD_SERVICE = 'go-shields.herokuapp.com'
+SHIELD_COLOR = 'D07D1D'
+
 MANAGERS = ADMINS
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
