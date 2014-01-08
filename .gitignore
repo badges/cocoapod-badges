@@ -1,5 +1,6 @@
 venv
 *.pyc
+.idea
 /bin
 /include
 /lib
