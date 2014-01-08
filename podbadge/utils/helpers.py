@@ -36,7 +36,7 @@ def clean_info(info):
 
 
 def get_pod_info(podname):
-    url = 'http://cocoapods.org/api/v1/pod/%s.json' % (podname, )
+    url = 'http://search.cocoapods.org/api/v1/pod/%s.json' % (podname, )
 
     response = urllib2.urlopen(url)
     return simplejson.loads(response.read())

@@ -17,7 +17,7 @@ class VersionView( View ):
                 pod_info = helpers.get_pod_info(podname)
 
                 version = pod_info['version']
-            except Exception:
+            except Exception, e:
                 version = 'error'
 
         contents, mimetype = helpers.prepare_shield('version', version)
