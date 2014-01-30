@@ -4,7 +4,7 @@ Cocoapod Badges ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue
 [![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](https://cocoadocs.org/docsets/NSStringMask)
 [![Badge w/ Platform](https://cocoapod-badges.herokuapp.com/p/NSStringMask/badge.svg)](https://cocoadocs.org/docsets/NSStringMask)
 
-Cocoapod Badges are status badges to inform a pod's latest version deployed to [Cocoapods] through their [search API](git@github.com:CocoaPods/search.cocoapods.org.git).
+Cocoapod Badges are status badges to inform a pod's latest version deployed to [Cocoapods] through their [search API](https://github.com/CocoaPods/search.cocoapods.org).
 
 The badges are created thanks to [jbowes/buckler](https://github.com/jbowes/buckler) that provides "shields-as-a-service".
 
