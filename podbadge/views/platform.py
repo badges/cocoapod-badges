@@ -1,6 +1,7 @@
 __author__ = 'Flavio'
 
 from django.views.generic.base import View
+from django.views.decorators.cache import never_cache
 from django.http import HttpResponse
 
 from podbadge.utils import helpers
@@ -9,6 +10,7 @@ from podbadge.utils import helpers
 class PlatformView(View):
     template_name = 'badge_platform.html'
 
+    @never_cache
     def get(self, request, podname, retina=None):
 
         try:
@@ -21,7 +23,7 @@ class PlatformView(View):
             platforms = 'error'
 
         contents, mimetype = helpers.prepare_shield('platform', platforms)
-        return HttpResponse(contents, mimetype=mimetype)
+        return HttpResponse(contents, mimetype=mimetype[0])
 
 ############
 ### URLS ###

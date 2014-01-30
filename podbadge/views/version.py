@@ -1,6 +1,7 @@
 __author__ = 'Flavio'
 
 from django.views.generic.base import View
+from django.views.decorators.cache import never_cache
 from django.http import HttpResponse
 
 from podbadge.utils import helpers
@@ -11,6 +12,7 @@ import mimetypes
 class VersionView( View ):
     template_name = 'badge_version.html'
 
+    @never_cache
     def get(self, request, podname, version=None, retina=None):
         if not version:
             try:
@@ -21,7 +23,7 @@ class VersionView( View ):
                 version = 'error'
 
         contents, mimetype = helpers.prepare_shield('version', version)
-        return HttpResponse(contents, mimetype=mimetype)
+        return HttpResponse(contents, mimetype=mimetype[0])
 
 ############
 ### URLS ###
