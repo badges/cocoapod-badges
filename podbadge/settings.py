@@ -18,8 +18,7 @@ DATABASES = {
     }
 }
 
-SHIELD_SERVICE = 'go-shields.herokuapp.com'
-SHIELD_COLOR = 'D07D1D'
+SHIELD_SERVICE = 'http://img.shields.io/cocoapods/%(status)s/%(vendor)s.svg?style=flat'
 
 MANAGERS = ADMINS
 

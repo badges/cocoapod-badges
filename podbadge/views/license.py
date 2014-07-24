@@ -6,12 +6,12 @@ from django.http import HttpResponsePermanentRedirect
 
 from django.conf import settings
 
-class VersionView( View ):
+class LicenseView( View ):
     template_name = 'badge_version.html'
 
     @never_cache
     def get(self, request, podname):
-        return HttpResponsePermanentRedirect(settings.SHIELD_SERVICE % {'status': 'v', 'vendor': podname} )
+        return HttpResponsePermanentRedirect(settings.SHIELD_SERVICE % {'status': 'l', 'vendor': podname} )
 
 ############
 ### URLS ###
@@ -20,5 +20,5 @@ class VersionView( View ):
 from django.conf.urls import patterns, url
 
 urlpatterns = patterns('',
-    url(r'^/(?P<podname>.*?)/', VersionView.as_view()),
+    url(r'^/(?P<podname>.*?)', LicenseView.as_view()),
 )

@@ -2,28 +2,17 @@ __author__ = 'Flavio'
 
 from django.views.generic.base import View
 from django.views.decorators.cache import never_cache
-from django.http import HttpResponse
+from django.http import HttpResponsePermanentRedirect
 
-from podbadge.utils import helpers
+from django.conf import settings
 
 
 class PlatformView(View):
     template_name = 'badge_platform.html'
 
     @never_cache
-    def get(self, request, podname, retina=None):
-
-        try:
-            pod_info = helpers.get_pod_info(podname)
-
-            platforms = pod_info.get('platforms', {'osx': '', 'ios': ''}).keys()
-
-            platforms = '|'.join(platforms)
-        except Exception:
-            platforms = 'error'
-
-        contents, mimetype = helpers.prepare_shield('platform', platforms)
-        return HttpResponse(contents, mimetype=mimetype[0])
+    def get(self, request, podname):
+        return HttpResponsePermanentRedirect(settings.SHIELD_SERVICE % {'status': 'p', 'vendor': podname} )
 
 ############
 ### URLS ###
@@ -32,5 +21,5 @@ class PlatformView(View):
 from django.conf.urls import patterns, url
 
 urlpatterns = patterns('',
-    url(r'^/(?P<podname>.*?)/badge(?:(?P<retina>@2x))?.(?:(png|svg))$', PlatformView.as_view()),
+    url(r'^/(?P<podname>.*?)/', PlatformView.as_view()),
 )

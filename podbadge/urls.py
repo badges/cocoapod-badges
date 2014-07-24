@@ -14,4 +14,5 @@ urlpatterns = patterns('',
 
     url(r'^p', include('podbadge.views.platform')),
     url(r'^v', include('podbadge.views.version')),
+    url(r'^l', include('podbadge.views.license')),
 )
