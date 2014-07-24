@@ -50,6 +50,17 @@ The Platform info is optional and it may not be set in the pod's Podspec. Be sur
 |-----|-----|---------|-------|
 | ![ios](https://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge.png) | ![osx](https://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge.png) | ![ios/osx](https://cocoapod-badges.herokuapp.com/p/AFNetworking/badge.png) | ![error](https://cocoapod-badges.herokuapp.com/p/error/badge.png) |
 
+## License Badge
+
+The license badge works similarly to the platform badge since it's also an optional setting in the Podspec.
+
+	https://cocoapod-badges.herokuapp.com/l/$PODNAME/badge.(png|svg)
+
+| MIT | Apache | BSD | error |
+|-----|--------|-----|-------|
+| ![MIT](https://cocoapod-badges.herokuapp.com/l/NSStringMask/badge.png) | ![Apache](https://cocoapod-badges.herokuapp.com/l/RestKit/badge.png) | ![BSD](https://cocoapod-badges.herokuapp.com/l/CocoaLumberjack/badge.png) | ![error](https://cocoapod-badges.herokuapp.com/l/foo/badge.png) |
+
+
 # Github Caching Issue
 
 Github has a caching policy for images in README files, you may have noticed that sometimes Travis-CI's badge may be wrong in some repositories. It happens quite often.

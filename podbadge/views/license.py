@@ -20,5 +20,5 @@ class LicenseView( View ):
 from django.conf.urls import patterns, url
 
 urlpatterns = patterns('',
-    url(r'^/(?P<podname>.*?)', LicenseView.as_view()),
+    url(r'^/(?P<podname>.*?)/', LicenseView.as_view()),
 )
