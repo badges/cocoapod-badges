@@ -1,14 +1,18 @@
 Cocoapod Badges ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 ===============
 
-[![Badge w/ Version](https://betabadges.herokuapp.com/v/NSStringMask/badge.png)](https://cocoadocs.org/docsets/NSStringMask)
-[![Badge w/ Platform](https://betabadges.herokuapp.com/p/NSStringMask/badge.svg)](https://cocoadocs.org/docsets/NSStringMask)
+[![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](https://cocoadocs.org/docsets/NSStringMask)
+[![Badge w/ Platform](https://cocoapod-badges.herokuapp.com/p/NSStringMask/badge.svg)](https://cocoadocs.org/docsets/NSStringMask)
 
 Cocoapod Badges are status badges to inform a pod's latest version deployed to [Cocoapods] through their [search API](https://github.com/CocoaPods/search.cocoapods.org).
 
 The badges are created thanks to [jbowes/buckler](https://github.com/jbowes/buckler) that provides "shields-as-a-service".
 
 The "badge service" is hosted at [Heroku](https://www.heroku.com/)
+
+# *Attention!*
+
+This project has been discontinued! All badges are now proxied to [shields.io](http://shields.io). From now on, you should migrate your badges to their service!
 
 # Usage
 
@@ -22,29 +26,29 @@ Since the badge generation was "outsourced", for now, they can only be displayed
 
 Displays the pod's latest version available.
 
-	https://betabadges.herokuapp.com/v/$PODNAME/badge.png
+	https://cocoapod-badges.herokuapp.com/v/$PODNAME/badge.png
 
-[![NSStringMask](https://betabadges.herokuapp.com/v/NSStringMask/badge.png)](https://cocoadocs.org/docsets/NSStringMask)
+[![NSStringMask](https://cocoapod-badges.herokuapp.com/v/NSStringMask/badge.png)](https://cocoadocs.org/docsets/NSStringMask)
 
 Some folks were having trouble with Github's cache for the README file, so I enabled a URL parameter to set the version manually.
 
-	https://betabadges.herokuapp.com/v/$PODNAME/$VERSION/badge.png
+	https://cocoapod-badges.herokuapp.com/v/$PODNAME/$VERSION/badge.png
 
-[![NSStringMask](https://betabadges.herokuapp.com/v/NSStringMask/$VERSION/badge.png)](https://cocoadocs.org/docsets/NSStringMask)
+[![NSStringMask](https://cocoapod-badges.herokuapp.com/v/NSStringMask/$VERSION/badge.png)](https://cocoadocs.org/docsets/NSStringMask)
 
 | 1.0 | 1.1.2 | 1.0-RC1 | error |
 |-----|-------|---------|-------|
-| ![ios](https://betabadges.herokuapp.com/v/NSStringMask/1.0/badge.png) | ![osx](https://betabadges.herokuapp.com/v/NSStringMask/1.1.2/badge.png) | ![ios/osx](https://betabadges.herokuapp.com/v/NSStringMask/1.0-RC1/badge.png) | ![error](https://betabadges.herokuapp.com/v/error/badge.png) |
+| ![ios](https://cocoapod-badges.herokuapp.com/v/NSStringMask/1.0/badge.png) | ![osx](https://cocoapod-badges.herokuapp.com/v/NSStringMask/1.1.2/badge.png) | ![ios/osx](https://cocoapod-badges.herokuapp.com/v/NSStringMask/1.0-RC1/badge.png) | ![error](https://cocoapod-badges.herokuapp.com/v/error/badge.png) |
 
 ## Platforms Badge
 
 The Platform info is optional and it may not be set in the pod's Podspec. Be sure to correctly provide this information or the badge will not work! If there's no platform info, the badge will display "error", even though `$PODNAME` may be correct!
 
-	https://betabadges.herokuapp.com/p/$PODNAME/badge.png
+	https://cocoapod-badges.herokuapp.com/p/$PODNAME/badge.png
 
 | iOS | OSX | iOS/OSX | error
 |-----|-----|---------|-------|
-| ![ios](https://betabadges.herokuapp.com/p/AKLocationManager/badge.png) | ![osx](https://betabadges.herokuapp.com/p/DDQuicklookAdditionalViews/badge.png) | ![ios/osx](https://betabadges.herokuapp.com/p/AFNetworking/badge.png) | ![error](https://betabadges.herokuapp.com/p/error/badge.png) |
+| ![ios](https://cocoapod-badges.herokuapp.com/p/AKLocationManager/badge.png) | ![osx](https://cocoapod-badges.herokuapp.com/p/DDQuicklookAdditionalViews/badge.png) | ![ios/osx](https://cocoapod-badges.herokuapp.com/p/AFNetworking/badge.png) | ![error](https://cocoapod-badges.herokuapp.com/p/error/badge.png) |
 
 # Github Caching Issue
 
@@ -58,7 +62,7 @@ The usual way of fixing this is pushing another update to the README file after 
 
 betabadges is licensed under the MIT License:
 
-Copyright (c) 2013 Flávio Caetano ([http://flaviocaetano.com](https://flaviocaetano.com))
+Copyright (c) 2014 Flávio Caetano ([http://flaviocaetano.com](https://flaviocaetano.com))
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
